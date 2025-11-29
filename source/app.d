@@ -48,6 +48,7 @@ void main(string[] args) {
 			while (getTime() > nextTick && loops < maxSkip) {
 				writefln("hi: %.52f", interpolation);
 				nextTick += skipTicks;
+				
 				loops += 1;
 			}
 
