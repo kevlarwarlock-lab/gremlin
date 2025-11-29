@@ -10,5 +10,7 @@
 	"license": "proprietary",
 	"name": "gremlin",
 	"targetPath": "object",
-	"targetType": "executable"
+	"targetType": "library",
+	"dflags": ["--betterC", "--nogc", "--disable-red-zone", "--mtriple=aarch64-unknown-windows-efi"],
+	"postBuildCommands": ["lld-link /dll /entry:efi_main /machine:arm64 /out:BOOTAA64.EFI /subsystem:efi_application ./object/libgremlin.a"]
 }
