@@ -1,0 +1,14 @@
+{
+	"authors": [
+		"user"
+	],
+	"copyright": "Copyright © 2025, user",
+	"dependencies": {
+		"gtk-d": "~>3.11.0"
+	},
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "gremlin",
+	"targetPath": "object",
+	"targetType": "executable"
+}

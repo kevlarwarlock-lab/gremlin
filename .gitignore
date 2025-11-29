@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/gremlin
+gremlin.so
+gremlin.dylib
+gremlin.dll
+gremlin.a
+gremlin.lib
+gremlin-test-*
+*.exe
+*.o
+*.obj
+*.lst
