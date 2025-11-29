@@ -24,7 +24,8 @@ auto getTime() {
 	return micros;
 }
 
-void render(double iv){}
+void render(double iv) {
+}
 
 void main(string[] args) {
 	Main.initMultiThread(args);
@@ -40,7 +41,7 @@ void main(string[] args) {
 		enum maxSkip = 5;
 		enum skipTicks = 1_000_000 / tps;
 		auto nextTick = getTime();
-		double interpolation=1.0;
+		double interpolation = 1.0;
 		while (.running) {
 			//writeln("hello");
 			auto loops = 0;
@@ -48,7 +49,7 @@ void main(string[] args) {
 			while (getTime() > nextTick && loops < maxSkip) {
 				writefln("hi: %.52f", interpolation);
 				nextTick += skipTicks;
-				
+
 				loops += 1;
 			}
 
@@ -65,4 +66,3 @@ void main(string[] args) {
 
 	.running = false;
 }
-//0000009999999999177333620536956004798412322998046875
