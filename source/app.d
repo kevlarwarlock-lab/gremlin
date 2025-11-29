@@ -27,7 +27,7 @@ auto getTime() {
 void render(double iv) {
 }
 
-void main(string[] args) {
+void gemMain(string[] args) {
 	Main.initMultiThread(args);
 	MainWindow win = new MainWindow("Hello World");
 	win.setDefaultSize(200, 100);
