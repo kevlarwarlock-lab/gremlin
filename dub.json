@@ -10,5 +10,5 @@
 	"license": "proprietary",
 	"name": "gremlin",
 	"targetPath": "object",
-	"targetType": "executable"
+	"targetType": "library"
 }
